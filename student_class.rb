@@ -17,4 +17,8 @@ def initialize(name, cohort)
     @name = new_name
   end
 
+  def set_cohort(new_cohort)
+    return @cohort = new_cohort
+  end
+
 end
