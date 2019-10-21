@@ -11,4 +11,9 @@ def test_student_class_name
   assert_equal("Marc", student_class.get_name)
 end
 
+def test_student_class_cohort
+  student_class = Student.new("Richard", "e35")
+  assert_equal("e35", student_class.get_cohort)
+end
+
 end
