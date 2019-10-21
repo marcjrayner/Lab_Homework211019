@@ -21,4 +21,13 @@ def initialize(name, cohort)
     return @cohort = new_cohort
   end
 
+  def talk(string)
+    return "#{string}#{@name}"
+  end
+
+  def fav_language(string)
+     return "My favourite language is #{string}"
+  end
+
+
 end
