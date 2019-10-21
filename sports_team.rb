@@ -30,8 +30,8 @@ def add_player(new_player)
 end
 
 def player_check(checkname)
-  @players.include?("Java")
-end 
+  @players.include?(checkname)
+end
 
 
 
