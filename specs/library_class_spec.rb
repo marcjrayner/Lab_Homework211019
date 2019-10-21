@@ -46,9 +46,16 @@ def test_get_book
   }, result)
 end
 
-
-
-
+def test_get_book_by_title
+  lib = Library.new(@books_list)
+  result = lib.get_book_info_by_title("the_pearl")
+  assert_equal({ title: "the_pearl",
+    rental_details: {
+      student_name: "Marc",
+      date: "20/11/20"
+    }
+    },result)
+end
 
 
 

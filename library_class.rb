@@ -19,5 +19,17 @@ end
     return @books_array[book_num]
   end
 
+  def get_book_info_by_title(book_title)
+    for book in @books_array
+      if book_title == book[:title]
+        return book
+      end
+    end
+  end
+
+
+
+
+
 
 end
