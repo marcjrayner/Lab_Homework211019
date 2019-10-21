@@ -27,9 +27,11 @@ class SportsTeam
 
 def add_player(new_player)
   @players << new_player
+end
+
+def player_check(checkname)
+  @players.include?("Java")
 end 
-
-
 
 
 

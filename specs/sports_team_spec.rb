@@ -31,7 +31,10 @@ def test_add_player
   assert_equal(["Juan", "Sandy", "John", "Eugene"],sports_team.players)
 end
 
-
+def test_player_check__true
+  sports_team = SportsTeam.new("Javascript Junkies", ["Java", "Jabba"], "Coach Steve")
+  assert_equal(true, sports_team.player_check("Java"))
+end 
 
 
 
